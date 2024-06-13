@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      Profile Details
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ profile.name }}</h5>
+      <p class="card-text"><strong>Designation:</strong> {{ profile.designation }}</p>
+      <p class="card-text"><strong>Email:</strong> {{ profile.email }}</p>
+      <p class="card-text"><strong>Phone Number:</strong> {{ profile.phone }}</p>
+      <p class="card-text"><strong>About:</strong> {{ profile.about }}</p>
+      <div>
+        <h6>Education:</h6>
+        <ul>
+          <li>{{ profile.degree1 }} at {{ profile.institution1 }}</li>
+          <p>{{profile.year1}}</p>
+          <li>{{ profile.degree2 }} at {{ profile.institution2 }}</li>
+          <p>{{profile.year2}}</p>
+        </ul>
+      </div>
+      <div>
+        <h6>Work Experience:</h6>
+        <ul>
+          <li>{{ profile.jobTitle1 }} at {{ profile.company1 }}</li>
+          <p>{{profile.years1}}</p>
+          <li>{{ profile.jobTitle2 }} at {{ profile.company2 }}</li>
+          <p>{{profile.years2}}</p>
+        </ul>
+      </div>
+      <div>
+        <h6>References:</h6>
+        <ul>
+          <li>{{ profile.refName1 }}</li>
+          <p>{{profile.refContact1}}</p>
+          <p>{{profile.refEmail1}}</p>
+          <li>{{ profile.refName2 }} </li>
+          <p>{{profile.refContact2}}</p>
+          <p>{{profile.refEmail2}}</p>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

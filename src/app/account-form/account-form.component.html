@@ -1,0 +1,105 @@
+<div class="container mt-5">
+    <div class="form-area">
+        <h1>{{ title }}</h1>
+        <form [formGroup]="form" (ngSubmit)="onsubmit()" class="styled-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="designation" class="form-label">Designation</label>
+                <input type="text" class="form-control" id="designation" formControlName="designation" placeholder="Enter your designation">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone" formControlName="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="about" class="form-label">About You</label>
+                <textarea class="form-control" id="about" formControlName="about" placeholder="About you"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="skill" class="form-label">Skill</label>
+                <input type="text" class="form-control" id="skill" formControlName="skill" placeholder="Enter your skill">
+            </div>
+            <div class="education-container">
+                <div  class="education-group">
+                    <h5>Education 1</h5>
+                    <label for="degree1" class="form-label">Degree</label>
+                    <input type="text" class="form-control" id="degree1" formControlName="degree1" placeholder="Enter your degree">
+                    
+                    <label for="institution1" class="form-label">Institution</label>
+                    <input type="text" class="form-control" id="institution1" formControlName="institution1" placeholder="Enter your institution">
+                    
+                    <label for="year1" class="form-label">Year</label>
+                    <input type="text" class="form-control" id="year1" formControlName="year1" placeholder="Enter your graduation year">
+                </div>
+                <div  class="education-group">
+                    <h5>Education 2</h5>
+                    <label for="degree2" class="form-label">Degree</label>
+                    <input type="text" class="form-control" id="degree2" formControlName="degree2" placeholder="Enter your degree">
+                    
+                    <label for="institution2" class="form-label">Institution</label>
+                    <input type="text" class="form-control" id="institution2" formControlName="institution2" placeholder="Enter your institution">
+                    
+                    <label for="year2" class="form-label">Year</label>
+                    <input type="text" class="form-control" id="year2" formControlName="year2" placeholder="Enter your graduation year">
+                </div>
+            </div>
+
+            <div class="work-experience-container">
+                <div  class="work-experience-group">
+                    <h5>Work Experience 1</h5>
+                    <label for="jobTitle1" class="form-label">Job Title</label>
+                    <input type="text" class="form-control" id="jobTitle1" formControlName="jobTitle1" placeholder="Enter your job title">
+                    
+                    <label for="company1" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="company1" formControlName="company1" placeholder="Enter your company name">
+                    
+                    <label for="years1" class="form-label">Years</label>
+                    <input type="text" class="form-control" id="years1" formControlName="years1" placeholder="Enter the years you worked">
+                </div>
+                <div  class="work-experience-group">
+                    <h5>Work Experience 2</h5>
+                    <label for="jobTitle2" class="form-label">Job Title</label>
+                    <input type="text" class="form-control" id="jobTitle2" formControlName="jobTitle2" placeholder="Enter your job title">
+                    
+                    <label for="company2" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="company2" formControlName="company2" placeholder="Enter your company name">
+                    
+                    <label for="years2" class="form-label">Years</label>
+                    <input type="text" class="form-control" id="years2" formControlName="years2" placeholder="Enter the years you worked">
+                </div>
+            </div>
+            <div class="reference-container">
+                <div  class="reference-group">
+                    <h5>Reference 1</h5>
+                    <label for="refName1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="refName1" formControlName="refName1" placeholder="Enter reference name">
+                    
+                    <label for="refContact1" class="form-label">Contact</label>
+                    <input type="text" class="form-control" id="refContact1" formControlName="refContact1" placeholder="Enter reference contact">
+                    
+                    <label for="refEmail1" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="refEmail1" formControlName="refEmail1" placeholder="Enter reference email">
+                </div>
+                <div  class="reference-group">
+                    <h5>Reference 2</h5>
+                    <label for="refName2" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="refName2" formControlName="refName2" placeholder="Enter reference name">
+                    
+                    <label for="refContact2" class="form-label">Contact</label>
+                    <input type="text" class="form-control" id="refContact2" formControlName="refContact2" placeholder="Enter reference contact">
+                    
+                    <label for="refEmail2" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="refEmail2" formControlName="refEmail2" placeholder="Enter reference email">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

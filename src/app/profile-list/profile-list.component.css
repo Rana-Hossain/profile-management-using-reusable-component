@@ -1,0 +1,15 @@
+.divider {
+    display: inline-block;
+    width: 10px; /* Adjust the width of the divider as needed */
+}
+/* Add divider between each column */
+.table th,
+.table td {
+    border-right: 1px solid #a5bdd6; /* Adjust the color as needed */
+}
+
+/* Remove last border-right */
+.table th:last-child,
+.table td:last-child {
+    border-right: none;
+}

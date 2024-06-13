@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    justify-content: center; /* horizontally center the content */
+    align-items: center; /* vertically center the content */
+    height: 180vh; /* adjust the height as needed */
+  }
+  .btn-primary {
+    /* Your existing styles for the primary button */
+    margin-top: 10px; /* Adjust as needed */
+  }
+  
+  .form-area {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd; /* Border between top and down */
+    padding-bottom: 1rem;
+  }
+  .profile-info ,.edu-skill,.exper-ref{
+    border-bottom: 1px solid #ddd;
+  }
+  .top-left {
+    flex: 1;
+  }
+  
+  .top-right {
+    margin-left: 2rem;
+  }
+  
+  .top-right img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-designation {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .top-left-down {
+    margin-top: 1rem;
+  }
+  
+  .styled-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .down {
+    margin-top: 2rem;
+  }
+  
+  .profile-info {
+    margin-bottom: 2rem;
+  }
+  
+  .edu-skill, .exper-ref {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .edu, .exper {
+    width: 50%; 
+  }
+  
+  .skill, .ref {
+    width: 30%; 
+  }
+  
+  .inst1, .inst2, .org1, .org2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .degree1, .degree2, .pos1, .pos2 {
+    flex: 1;
+  }
+  
+  .year1, .year2 {
+    flex: 0 0 80px; /* Fixed width for year column */
+    text-align: right; /* Align year text to the right */
+  }
+  
+  .text {
+    margin-top: 0.5rem;
+  }
+  .ref1{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .text-inst1,.text-com1{
+    margin-top: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+.top-left-down {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.phone, .email {
+    display: flex;
+    align-items: center;
+}
+
+.phone p, .email p {
+    margin: 0;
+}

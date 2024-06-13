@@ -1,0 +1,62 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.form-area {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.styled-form .form-label {
+    font-weight: bold;
+}
+
+.styled-form .form-control {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.styled-form .btn-primary {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.styled-form .form-control:focus {
+    border-color: #366eaa;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.styled-form {
+    border: 1px solid #708caa;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+h5 {
+    margin-top: 20px;
+}
+
+.education-container, .work-experience-container, .reference-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.education-group, .work-experience-group, .reference-group {
+    flex: 1;
+    min-width: 45%;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

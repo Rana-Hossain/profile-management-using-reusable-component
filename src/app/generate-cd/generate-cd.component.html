@@ -1,0 +1,99 @@
+<div class="container mt-5">
+    <div class="form-area">
+      <h1>Profile Details</h1>
+      <form class="styled-form"> 
+        <div class="top">
+          <div class="top-left">
+            <h5 class="card-title">{{ profile.name }}</h5>
+            <p class="card-designation"> {{ profile.designation }}</p>
+            <div class="top-left-down">
+              <div class="phone">
+                <span>📞</span>
+                <p class="card-text"> {{profile.phone }}</p>
+              </div>
+              <div class="email">
+                <span>📧</span>
+                <p class="card-text"> {{ profile.email }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="top-right">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLU5_eUUGBfxfxRd4IquPiEwLbt4E_6RYMw&s" alt="Demo Image">
+          </div>
+        </div>
+        <div class="down">
+          <h4>PROFILE INFO</h4>
+          <div class="profile-info">
+            <p class="card-text"> {{ profile.about }}</p>
+          </div>
+          <form class="edu-skill">
+            <form  class="edu">
+              <h4>Education</h4>
+              <div class="inst1">
+                <div class="degree1">
+                  <p class="card-text"> {{profile.degree1}}</p>
+                </div>
+                <div class="year1">
+                  <p class="card-text"> {{profile.year1}}</p>
+                </div>
+              </div>
+              <p class="text-inst1">{{profile.institution1}}</p>
+              <div class="inst2">
+                <div class="degree2">
+                  <p class="card-text"> {{profile.degree2}}</p>
+                </div>
+                <div class="year2">
+                  <p class="card-text"> {{profile.year2}}</p>
+                </div>
+              </div>
+              <p class="text">{{profile.institution2}}</p>
+            </form>
+            <form class="skill">
+              <h4>Skill</h4>
+              <ul>
+                <li class="skill" *ngFor="let skill of skillArray">{{ skill }}</li>
+              </ul>
+            </form>
+          </form>
+          <form class="exper-ref">
+            <form  class="exper">
+              <h4>Experience</h4>
+              <div class="org1">
+                <div class="pos1">
+                  <p class="card-text"> {{profile.jobTitle1}}</p>
+                </div>
+                <div class="year1">
+                  <p class="card-text"> {{profile.years2}}</p>
+                </div>
+              </div>
+              <p class="text-com1">{{profile.company1}}</p>
+              <div class="inst2">
+                <div class="pos2">
+                  <p class="card-text"> {{profile.jobTitle2}}</p>
+                </div>
+                <div class="year2">
+                  <p class="card-text"> {{profile.years2}}</p>
+                </div>
+              </div>
+              <p class="text">{{profile.company2}}</p>
+            </form>
+            <form class="ref">
+              <h4>Reference</h4>
+              <div class="ref1">
+                <p><p class="text">{{profile.refName1}}</p>
+                <p><p class="text">{{profile.refContact1}}</p>
+                <p><p class="text">{{profile.refEmail1}}</p>
+              </div>
+              <div class="ref2">
+                <p><p class="text">{{profile.refName2}}</p>
+                <p><p class="text">{{profile.refContact2}}</p>
+                <p><p class="text">{{profile.refEmail2}}</p>
+              </div>
+            </form>
+          </form>
+        </div>
+      </form>
+      <button class="btn btn-primary" >Generate CV</button>
+    </div>
+  </div>
+  

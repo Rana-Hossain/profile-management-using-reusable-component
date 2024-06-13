@@ -1,0 +1,9 @@
+/* Ensure sidebar icon button is always visible */
+.navbar-toggler {
+  display: flex;
+  align-items: center; /* Align icon vertically */
+}
+
+.navbar-toggler-icon {
+  color: #fff; /* Icon color */
+}
